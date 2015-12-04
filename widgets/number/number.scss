@@ -10,6 +10,17 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 // ----------------------------------------------------------------------------
 // Widget-number styles
 // ----------------------------------------------------------------------------
+.twonumber{ 
+  h1{
+    margin: 0;
+    &.smaller{
+      font-size: 20px;
+    }
+  }
+  h2{
+    line-height: 74px;
+  }
+}
 .widget-number {
 
   background-color: $background-color;
