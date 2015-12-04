@@ -1,82 +1,116 @@
 ---
-convergence: |+
-  data: {"points":[{"x":25,"y":18},{"x":26,"y":11},{"x":27,"y":34},{"x":28,"y":33},{"x":29,"y":32},{"x":30,"y":23},{"x":31,"y":40},{"x":32,"y":35},{"x":33,"y":6},{"x":34,"y":22}],"id":"convergence","updatedAt":1449255122}
+convergence: ! 'data: {"points":[{"x":505,"y":24},{"x":506,"y":37},{"x":507,"y":17},{"x":508,"y":4},{"x":509,"y":45},{"x":510,"y":4},{"x":511,"y":44},{"x":512,"y":17},{"x":513,"y":17},{"x":514,"y":42}],"id":"convergence","updatedAt":1449257384}
 
-buzzwords: |+
-  data: {"items":[{"label":"Leverage","value":5},{"label":"Enterprise","value":7},{"label":"Paradigm shift","value":7},{"label":"Synergy","value":11},{"label":"Pivoting","value":11},{"label":"Streamlininess","value":3},{"label":"Turn-key","value":24},{"label":"Web 2.0","value":7},{"label":"Exit strategy","value":7}],"id":"buzzwords","updatedAt":1449251903}
 
-valuation: |+
-  data: {"current":26,"last":6,"id":"valuation","updatedAt":1449255119}
+'
+buzzwords: ! 'data: {"items":[{"label":"Leverage","value":5},{"label":"Enterprise","value":7},{"label":"Paradigm
+  shift","value":7},{"label":"Synergy","value":11},{"label":"Pivoting","value":11},{"label":"Streamlininess","value":3},{"label":"Turn-key","value":24},{"label":"Web
+  2.0","value":7},{"label":"Exit strategy","value":7}],"id":"buzzwords","updatedAt":1449251903}
 
-karma: |+
-  data: {"current":7590,"last":7580,"id":"karma","updatedAt":1449195395}
 
-memory: |+
-  data: {"value":74.3,"moreinfo":"dbm1-production.zozi.com","id":"memory","updatedAt":1449193749}
+'
+valuation: ! 'data: {"current":16,"last":1,"id":"valuation","updatedAt":1449257381}
 
-mychart: |+
-  data: {"slices":[["Task","Hours per Day"],["Work",10],["Eat",1],["Commute",4],["Watch TV",3]],"id":"mychart","updatedAt":1449255114}
 
-memory2: |+
-  data: {"value":5.91,"moreinfo":"dbs1-production","id":"memory2","updatedAt":1449255115}
+'
+karma: ! 'data: {"current":7590,"last":7580,"id":"karma","updatedAt":1449195395}
 
-memory1: |+
-  data: {"value":74.2,"moreinfo":"dbm1-production.zozi.com","id":"memory1","updatedAt":1449255115}
 
-memory3: |+
-  data: {"value":7.56,"moreinfo":"dbs1-rjm","id":"memory3","updatedAt":1449255115}
+'
+memory: ! 'data: {"value":74.3,"moreinfo":"dbm1-production.zozi.com","id":"memory","updatedAt":1449193749}
 
-memory4: |+
-  data: {"value":34.1,"moreinfo":"denali-util1","id":"memory4","updatedAt":1449255115}
 
-memory5: |+
-  data: {"value":26.8,"moreinfo":"denali-web1","id":"memory5","updatedAt":1449255115}
+'
+mychart: ! 'data: {"slices":[["Task","Hours per Day"],["Work",11],["Eat",2],["Commute",3],["Watch
+  TV",1]],"id":"mychart","updatedAt":1449257376}
 
-memory6: |+
-  data: {"value":27.6,"moreinfo":"denali-web2","id":"memory6","updatedAt":1449255115}
 
-memory7: |+
-  data: {"value":25.5,"moreinfo":"denali-web3","id":"memory7","updatedAt":1449255115}
+'
+memory2: ! 'data: {"value":5.88,"moreinfo":"dbs1-production","id":"memory2","updatedAt":1449257337}
 
-memory8: |+
-  data: {"value":75.9,"moreinfo":"es1-production","id":"memory8","updatedAt":1449255115}
 
-memory9: |+
-  data: {"value":8.57,"moreinfo":"locarno-db1","id":"memory9","updatedAt":1449255115}
+'
+memory1: ! 'data: {"value":74.2,"moreinfo":"dbm1-production.zozi.com","id":"memory1","updatedAt":1449257337}
 
-memory10: |+
-  data: {"value":8.25,"moreinfo":"locarno-db2","id":"memory10","updatedAt":1449255115}
 
-memory11: |+
-  data: {"value":7.65,"moreinfo":"locarno-load1","id":"memory11","updatedAt":1449255115}
+'
+memory3: ! 'data: {"value":7.56,"moreinfo":"dbs1-rjm","id":"memory3","updatedAt":1449257337}
 
-memory12: |+
-  data: {"value":33.2,"moreinfo":"locarno-web1","id":"memory12","updatedAt":1449255115}
 
-memory13: |+
-  data: {"value":28.9,"moreinfo":"locarno-web2","id":"memory13","updatedAt":1449255115}
+'
+memory4: ! 'data: {"value":34.1,"moreinfo":"denali-util1","id":"memory4","updatedAt":1449257337}
 
-memory14: |+
-  data: {"value":73.7,"moreinfo":"production-app1","id":"memory14","updatedAt":1449255115}
 
-memory15: |+
-  data: {"value":98.0,"moreinfo":"production-app2","id":"memory15","updatedAt":1449255115}
+'
+memory5: ! 'data: {"value":26.8,"moreinfo":"denali-web1","id":"memory5","updatedAt":1449257337}
 
-memory16: |+
-  data: {"value":88.8,"moreinfo":"production-app3","id":"memory16","updatedAt":1449255115}
 
-memory17: |+
-  data: {"value":98.8,"moreinfo":"production-app4","id":"memory17","updatedAt":1449255115}
+'
+memory6: ! 'data: {"value":27.6,"moreinfo":"denali-web2","id":"memory6","updatedAt":1449257337}
 
-memory18: |+
-  data: {"value":41.1,"moreinfo":"production-es2","id":"memory18","updatedAt":1449255115}
 
-memory19: |+
-  data: {"value":2.56,"moreinfo":"production-load2","id":"memory19","updatedAt":1449255115}
+'
+memory7: ! 'data: {"value":25.7,"moreinfo":"denali-web3","id":"memory7","updatedAt":1449257337}
 
-pageload: |+
-  data: {"current":218,"last":227,"id":"pageload","updatedAt":1449255119}
 
-pullrequests: |+
-  data: {"items":[{"label":"wildcard param prefix bug","value":0},{"label":"Fix for https://github.com/julienschmidt/httprouter/issues/106","value":0},{"label":"Test for path existence and iterator over all paths","value":0},{"label":"remove unused static nodeType","value":0},{"label":"Introduction of RouteGroup concept","value":0},{"label":"added: support for RawPathRouting in Router","value":0}],"id":"pullrequests","updatedAt":1449252400}
+'
+memory8: ! 'data: {"value":75.9,"moreinfo":"es1-production","id":"memory8","updatedAt":1449257337}
 
+
+'
+memory9: ! 'data: {"value":8.56,"moreinfo":"locarno-db1","id":"memory9","updatedAt":1449257337}
+
+
+'
+memory10: ! 'data: {"value":8.2,"moreinfo":"locarno-db2","id":"memory10","updatedAt":1449257337}
+
+
+'
+memory11: ! 'data: {"value":7.65,"moreinfo":"locarno-load1","id":"memory11","updatedAt":1449257337}
+
+
+'
+memory12: ! 'data: {"value":33.2,"moreinfo":"locarno-web1","id":"memory12","updatedAt":1449257337}
+
+
+'
+memory13: ! 'data: {"value":28.9,"moreinfo":"locarno-web2","id":"memory13","updatedAt":1449257337}
+
+
+'
+memory14: ! 'data: {"value":79.5,"moreinfo":"production-app1","id":"memory14","updatedAt":1449257337}
+
+
+'
+memory15: ! 'data: {"value":98.0,"moreinfo":"production-app2","id":"memory15","updatedAt":1449257337}
+
+
+'
+memory16: ! 'data: {"value":88.9,"moreinfo":"production-app3","id":"memory16","updatedAt":1449257337}
+
+
+'
+memory17: ! 'data: {"value":99.0,"moreinfo":"production-app4","id":"memory17","updatedAt":1449257337}
+
+
+'
+memory18: ! 'data: {"value":41.1,"moreinfo":"production-es2","id":"memory18","updatedAt":1449257337}
+
+
+'
+memory19: ! 'data: {"value":2.57,"moreinfo":"production-load2","id":"memory19","updatedAt":1449257337}
+
+
+'
+pageload: ! 'data: {"current":88,"last":98,"id":"pageload","updatedAt":1449257381}
+
+
+'
+pullrequests: ! 'data: {"items":[{"label":"wildcard param prefix bug","value":0},{"label":"Fix
+  for https://github.com/julienschmidt/httprouter/issues/106","value":0},{"label":"Test
+  for path existence and iterator over all paths","value":0},{"label":"remove unused
+  static nodeType","value":0},{"label":"Introduction of RouteGroup concept","value":0},{"label":"added:
+  support for RawPathRouting in Router","value":0}],"id":"pullrequests","updatedAt":1449256976}
+
+
+'

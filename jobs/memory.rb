@@ -1,14 +1,12 @@
 require 'dotenv'
 Dotenv.load
 require 'net/http'
-require 'uri'
 require 'json'
 require 'rest_client'
 
-uri = URI.parse('https://api.newrelic.com/v2/servers.json')
-url = 'https://api.newrelic.com/v2/servers.json'
+url = 'https://api.newrelic.com/v2/servers.json?filter[ids]=1557588,+2709321,+2514170,+2297767,+2709479'
 
-SCHEDULER.every '1m' do
+SCHEDULER.every '10s' do
 	response = RestClient.get(
 		url,
 		:'X-Api-Key' => ENV['NEWRELIC_API_KEY']
@@ -16,10 +14,10 @@ SCHEDULER.every '1m' do
 	server_data = JSON.parse(response)
 	servers = server_data["servers"]
 	meters = []
-	servers.map.with_index do |server, index|
+	servers.map.with_index do |server|
 		meter_data = {		
-			name: servers[index]["name"],
-			value: servers[index]["summary"]["memory"]
+			name: server["name"],
+			value: server["summary"]["memory"]
 		}
 		meters << meter_data
 		#return meters
