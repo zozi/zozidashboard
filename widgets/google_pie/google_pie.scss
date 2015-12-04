@@ -22,6 +22,11 @@ $background-color: #fb9618;
     position: absolute;
     left: 0px;
     top: 0px;
+    text{
+      fill: white!important;
+    }
   }
-
+  text{
+    font-size: 18px;
+  }
 }

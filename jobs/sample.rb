@@ -12,17 +12,17 @@ SCHEDULER.every '5s' do
   #send_event('memory',   { value: rand(100) })
 end
 
-current_work = 11
-current_eat = 2
-current_commute = 3
-current_tv = 2
+current_imported = 13000
+current_stuck = 10000
+current_provisionable = 8000
+current_laps = 6000
 
 SCHEDULER.every '10s' do
 	send_event('mychart', slices: [
-        ['Task', 'Hours per Day'],
-        ['Work',     current_work + rand(-1..1)],
-        ['Eat',      current_eat + rand(-1..1)],
-        ['Commute',  current_commute + rand(-1..1)],
-        ['Watch TV', current_tv + rand(-1..1)]
+        ['Imported to ZOZI', 'Hours per Day'],
+        ['Imported to ZOZI', current_imported + rand(0..20)],
+        ['Missing Data',     current_stuck + rand(-13..2)],
+        ['Provisionable',      current_provisionable + rand(-11..2)],
+        ['Published LAPs',  current_laps + rand(-1..9)]
       ])
 end
