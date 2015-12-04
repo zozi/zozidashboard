@@ -1,14 +1,14 @@
 current_valuation = 0
-current_karma = 220
+# current_karma = 220
 
 SCHEDULER.every '5s' do
   last_valuation = current_valuation
-  last_karma     = current_karma
+  # last_karma     = current_karma
   current_valuation = rand(100)
-  current_karma     = last_karma + rand(-10..10)
+  # current_karma     = last_karma + rand(-10..10)
 
   send_event('valuation', { current: current_valuation, last: last_valuation })
-  send_event('pageload', { current: current_karma, last: last_karma })
+  # send_event('pageload', { current: current_karma, last: last_karma })
   #send_event('memory',   { value: rand(100) })
 end
 
