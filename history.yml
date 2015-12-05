@@ -1,5 +1,5 @@
 ---
-convergence: ! 'data: {"points":[{"x":505,"y":24},{"x":506,"y":37},{"x":507,"y":17},{"x":508,"y":4},{"x":509,"y":45},{"x":510,"y":4},{"x":511,"y":44},{"x":512,"y":17},{"x":513,"y":17},{"x":514,"y":42}],"id":"convergence","updatedAt":1449257384}
+convergence: ! 'data: {"points":[{"x":871,"y":8},{"x":872,"y":38},{"x":873,"y":32},{"x":874,"y":40},{"x":875,"y":28},{"x":876,"y":15},{"x":877,"y":1},{"x":878,"y":16},{"x":879,"y":29},{"x":880,"y":43}],"id":"convergence","updatedAt":1449275863}
 
 
 '
@@ -9,7 +9,7 @@ buzzwords: ! 'data: {"items":[{"label":"Leverage","value":5},{"label":"Enterpris
 
 
 '
-valuation: ! 'data: {"current":16,"last":1,"id":"valuation","updatedAt":1449257381}
+valuation: ! 'data: {"current":81,"last":7,"id":"valuation","updatedAt":1449275863}
 
 
 '
@@ -21,28 +21,28 @@ memory: ! 'data: {"value":74.3,"moreinfo":"dbm1-production.zozi.com","id":"memor
 
 
 '
-mychart: ! 'data: {"slices":[["Task","Hours per Day"],["Work",11],["Eat",2],["Commute",3],["Watch
-  TV",1]],"id":"mychart","updatedAt":1449257376}
+mychart: ! 'data: {"slices":[["Imported to ZOZI","Hours per Day"],["Imported to ZOZI",13007],["Missing
+  Data",9993],["Provisionable",7990],["Published LAPs",6000]],"id":"mychart","updatedAt":1449275863}
 
 
 '
-memory2: ! 'data: {"value":5.88,"moreinfo":"dbs1-production","id":"memory2","updatedAt":1449257337}
+memory2: ! 'data: {"value":62.3,"moreinfo":"production-app3","id":"memory2","updatedAt":1449275863}
 
 
 '
-memory1: ! 'data: {"value":74.2,"moreinfo":"dbm1-production.zozi.com","id":"memory1","updatedAt":1449257337}
+memory1: ! 'data: {"value":74.2,"moreinfo":"dbm1-production.zozi.com","id":"memory1","updatedAt":1449275863}
 
 
 '
-memory3: ! 'data: {"value":7.56,"moreinfo":"dbs1-rjm","id":"memory3","updatedAt":1449257337}
+memory3: ! 'data: {"value":72.0,"moreinfo":"production-app2","id":"memory3","updatedAt":1449275863}
 
 
 '
-memory4: ! 'data: {"value":34.1,"moreinfo":"denali-util1","id":"memory4","updatedAt":1449257337}
+memory4: ! 'data: {"value":84.0,"moreinfo":"production-app1","id":"memory4","updatedAt":1449275863}
 
 
 '
-memory5: ! 'data: {"value":26.8,"moreinfo":"denali-web1","id":"memory5","updatedAt":1449257337}
+memory5: ! 'data: {"value":67.9,"moreinfo":"production-app4","id":"memory5","updatedAt":1449275863}
 
 
 '
@@ -102,15 +102,27 @@ memory19: ! 'data: {"value":2.57,"moreinfo":"production-load2","id":"memory19","
 
 
 '
-pageload: ! 'data: {"current":88,"last":98,"id":"pageload","updatedAt":1449257381}
+pageload: ! 'data: {"current":7.55,"last":7.66,"id":"pageload","updatedAt":1449275863}
 
 
 '
-pullrequests: ! 'data: {"items":[{"label":"wildcard param prefix bug","value":0},{"label":"Fix
-  for https://github.com/julienschmidt/httprouter/issues/106","value":0},{"label":"Test
-  for path existence and iterator over all paths","value":0},{"label":"remove unused
-  static nodeType","value":0},{"label":"Introduction of RouteGroup concept","value":0},{"label":"added:
-  support for RawPathRouting in Router","value":0}],"id":"pullrequests","updatedAt":1449256976}
+pullrequests: ! 'data: {"items":[{"label":"wildcard param prefix bug","value":"mcspring"},{"label":"Fix
+  for https://github.com/julienschmidt/httprouter/issues/106","value":"newhook"},{"label":"Test
+  for path existence and iterator over all paths","value":"fcavani"},{"label":"remove
+  unused static nodeType","value":"MrGossett"},{"label":"Introduction of RouteGroup
+  concept","value":"dbudworth"},{"label":"added: support for RawPathRouting in Router","value":"imkira"}],"id":"pullrequests","updatedAt":1449275323}
+
+
+'
+apdex: ! 'data: {"current":0.53,"last":4.0,"goal":4,"title1":"Goal","title2":"Current","id":"apdex","updatedAt":1449275863}
+
+
+'
+page_views: ! 'data: {"current":64531,"last":72240,"id":"page_views","updatedAt":1449275803}
+
+
+'
+businesscat: ! 'data: {"image":"http://cdn.meme.am/instances/400x/65834436.jpg","id":"businesscat","updatedAt":1449275623}
 
 
 '
