@@ -24,7 +24,9 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
 .widget-number {
 
   background-color: $background-color;
-
+  &.purple{
+    background-color: #543C93;
+  }
   .title {
     color: $title-color;
   }
