@@ -1,128 +1,103 @@
 ---
-convergence: ! 'data: {"points":[{"x":871,"y":8},{"x":872,"y":38},{"x":873,"y":32},{"x":874,"y":40},{"x":875,"y":28},{"x":876,"y":15},{"x":877,"y":1},{"x":878,"y":16},{"x":879,"y":29},{"x":880,"y":43}],"id":"convergence","updatedAt":1449275863}
+convergence: |+
+  data: {"points":[{"x":10,"y":14},{"x":11,"y":25},{"x":12,"y":31},{"x":13,"y":37},{"x":14,"y":23},{"x":15,"y":49},{"x":16,"y":21},{"x":17,"y":5},{"x":18,"y":33},{"x":19,"y":21}],"id":"convergence","updatedAt":1449550671}
 
+buzzwords: |+
+  data: {"items":[{"label":"Leverage","value":5},{"label":"Enterprise","value":7},{"label":"Paradigm shift","value":7},{"label":"Synergy","value":11},{"label":"Pivoting","value":11},{"label":"Streamlininess","value":3},{"label":"Turn-key","value":24},{"label":"Web 2.0","value":7},{"label":"Exit strategy","value":7}],"id":"buzzwords","updatedAt":1449251903}
 
-'
-buzzwords: ! 'data: {"items":[{"label":"Leverage","value":5},{"label":"Enterprise","value":7},{"label":"Paradigm
-  shift","value":7},{"label":"Synergy","value":11},{"label":"Pivoting","value":11},{"label":"Streamlininess","value":3},{"label":"Turn-key","value":24},{"label":"Web
-  2.0","value":7},{"label":"Exit strategy","value":7}],"id":"buzzwords","updatedAt":1449251903}
+valuation: |+
+  data: {"current":10,"last":17,"id":"valuation","updatedAt":1449550669}
 
+karma: |+
+  data: {"current":7590,"last":7580,"id":"karma","updatedAt":1449195395}
 
-'
-valuation: ! 'data: {"current":81,"last":7,"id":"valuation","updatedAt":1449275863}
+memory: |+
+  data: {"value":74.3,"moreinfo":"dbm1-production.zozi.com","id":"memory","updatedAt":1449193749}
 
+mychart: |+
+  data: {"slices":[["Imported to ZOZI","Hours per Day"],["Imported to ZOZI",13020],["Missing Data",9988],["Provisionable",7997],["Published LAPs",6002]],"id":"mychart","updatedAt":1449550350}
 
-'
-karma: ! 'data: {"current":7590,"last":7580,"id":"karma","updatedAt":1449195395}
+memory2: |+
+  data: {"value":69.5,"moreinfo":"production-app3","id":"memory2","updatedAt":1449550350}
 
+memory1: |+
+  data: {"value":74.2,"moreinfo":"dbm1-production.zozi.com","id":"memory1","updatedAt":1449550350}
 
-'
-memory: ! 'data: {"value":74.3,"moreinfo":"dbm1-production.zozi.com","id":"memory","updatedAt":1449193749}
+memory3: |+
+  data: {"value":79.2,"moreinfo":"production-app2","id":"memory3","updatedAt":1449550350}
 
+memory4: |+
+  data: {"value":74.2,"moreinfo":"production-app1","id":"memory4","updatedAt":1449550350}
 
-'
-mychart: ! 'data: {"slices":[["Imported to ZOZI","Hours per Day"],["Imported to ZOZI",13007],["Missing
-  Data",9993],["Provisionable",7990],["Published LAPs",6000]],"id":"mychart","updatedAt":1449275863}
+memory5: |+
+  data: {"value":68.6,"moreinfo":"production-app4","id":"memory5","updatedAt":1449550350}
 
+memory6: |+
+  data: {"value":27.6,"moreinfo":"denali-web2","id":"memory6","updatedAt":1449257337}
 
-'
-memory2: ! 'data: {"value":62.3,"moreinfo":"production-app3","id":"memory2","updatedAt":1449275863}
+memory7: |+
+  data: {"value":25.7,"moreinfo":"denali-web3","id":"memory7","updatedAt":1449257337}
 
+memory8: |+
+  data: {"value":75.9,"moreinfo":"es1-production","id":"memory8","updatedAt":1449257337}
 
-'
-memory1: ! 'data: {"value":74.2,"moreinfo":"dbm1-production.zozi.com","id":"memory1","updatedAt":1449275863}
+memory9: |+
+  data: {"value":8.56,"moreinfo":"locarno-db1","id":"memory9","updatedAt":1449257337}
 
+memory10: |+
+  data: {"value":8.2,"moreinfo":"locarno-db2","id":"memory10","updatedAt":1449257337}
 
-'
-memory3: ! 'data: {"value":72.0,"moreinfo":"production-app2","id":"memory3","updatedAt":1449275863}
+memory11: |+
+  data: {"value":7.65,"moreinfo":"locarno-load1","id":"memory11","updatedAt":1449257337}
 
+memory12: |+
+  data: {"value":33.2,"moreinfo":"locarno-web1","id":"memory12","updatedAt":1449257337}
 
-'
-memory4: ! 'data: {"value":84.0,"moreinfo":"production-app1","id":"memory4","updatedAt":1449275863}
+memory13: |+
+  data: {"value":28.9,"moreinfo":"locarno-web2","id":"memory13","updatedAt":1449257337}
 
+memory14: |+
+  data: {"value":79.5,"moreinfo":"production-app1","id":"memory14","updatedAt":1449257337}
 
-'
-memory5: ! 'data: {"value":67.9,"moreinfo":"production-app4","id":"memory5","updatedAt":1449275863}
+memory15: |+
+  data: {"value":98.0,"moreinfo":"production-app2","id":"memory15","updatedAt":1449257337}
 
+memory16: |+
+  data: {"value":88.9,"moreinfo":"production-app3","id":"memory16","updatedAt":1449257337}
 
-'
-memory6: ! 'data: {"value":27.6,"moreinfo":"denali-web2","id":"memory6","updatedAt":1449257337}
+memory17: |+
+  data: {"value":99.0,"moreinfo":"production-app4","id":"memory17","updatedAt":1449257337}
 
+memory18: |+
+  data: {"value":41.1,"moreinfo":"production-es2","id":"memory18","updatedAt":1449257337}
 
-'
-memory7: ! 'data: {"value":25.7,"moreinfo":"denali-web3","id":"memory7","updatedAt":1449257337}
+memory19: |+
+  data: {"value":2.57,"moreinfo":"production-load2","id":"memory19","updatedAt":1449257337}
 
+pageload: |+
+  data: {"current":5.32,"last":1.0,"id":"pageload","updatedAt":1449550350}
 
-'
-memory8: ! 'data: {"value":75.9,"moreinfo":"es1-production","id":"memory8","updatedAt":1449257337}
+pullrequests: |+
+  data: {"items":[{"label":"Adds disclaimer, cancellation, confirmation text","value":"iandonovan"},{"label":"add unpublish batch action to MD::Profiles","value":"taylorchiu"},{"label":"handle /activities","value":"adametrnal"},{"label":"Update the sitemaps and improve SEO","value":"adametrnal"},{"label":"update concierge order once a LAP booking has been paid","value":"elfassy"},{"label":"Duration fallbacks","value":"juriewessels"},{"label":"Create Provision::StartTime service","value":"seanders"},{"label":"Add new search index for LAPs","value":"radixhound"},{"label":"Only throw the netsuite_id error in production","value":"markrebec"},{"label":"Provisionability charts","value":"alkema"},{"label":"Update promotions to support dollar per-item promos","value":"radixhound"},{"label":"Add account_id to md profiles and activities","value":"juriewessels"},{"label":"Fix failing Rails 3 to Rails 4 upgrade specs","value":"juriewessels"},{"label":"Rails 4 Editorial Spec fixes.","value":"juriewessels"},{"label":"Build the front end for the RAP pages","value":"adametrnal"},{"label":"Upgrade to rails 4 take 3","value":"chancancode"},{"label":"4 more not shown","value":""}],"id":"pullrequests","updatedAt":1449550665}
 
+pageload2: |+
+  data: {"goal":307,"last":312,"id":"pageload2","updatedAt":1449269946}
 
-'
-memory9: ! 'data: {"value":8.56,"moreinfo":"locarno-db1","id":"memory9","updatedAt":1449257337}
+apdex: |+
+  data: {"current":0.79,"last":4.0,"goal":4,"title1":"Goal","title2":"Current","id":"apdex","updatedAt":1449550350}
 
+page_views: |+
+  data: {"current":62844,"last":38737,"id":"page_views","updatedAt":1449550350}
 
-'
-memory10: ! 'data: {"value":8.2,"moreinfo":"locarno-db2","id":"memory10","updatedAt":1449257337}
+pivotal-1170950: |+
+  data: {"points":[{"x":1,"y":42.0},{"x":2,"y":44.0},{"x":3,"y":39.0},{"x":4,"y":37.0},{"x":5,"y":23.0},{"x":6,"y":32.0},{"x":7,"y":14.0},{"x":8,"y":12.0},{"x":9,"y":37.0},{"x":10,"y":39.0},{"x":11,"y":9.0},{"x":12,"y":21.0},{"x":13,"y":35.0},{"x":14,"y":50.0},{"x":15,"y":33.0},{"x":16,"y":25.0},{"x":17,"y":36.0},{"x":18,"y":33.0},{"x":19,"y":55.0},{"x":20,"y":39.0},{"x":21,"y":30.0},{"x":22,"y":10.0},{"x":23,"y":7.0},{"x":24,"y":36.0},{"x":25,"y":34.0},{"x":26,"y":32.0},{"x":27,"y":26.0},{"x":28,"y":36.0},{"x":29,"y":27.0},{"x":30,"y":42.0},{"x":31,"y":56.0},{"x":32,"y":10.0}],"displayedValue":41,"id":"pivotal-1170950","updatedAt":1449275496}
 
+pivotal: |+
+  data: {"points":[{"x":1,"y":42.0},{"x":2,"y":44.0},{"x":3,"y":39.0},{"x":4,"y":37.0},{"x":5,"y":23.0},{"x":6,"y":32.0},{"x":7,"y":14.0},{"x":8,"y":12.0},{"x":9,"y":37.0},{"x":10,"y":39.0},{"x":11,"y":9.0},{"x":12,"y":21.0},{"x":13,"y":35.0},{"x":14,"y":50.0},{"x":15,"y":33.0},{"x":16,"y":25.0},{"x":17,"y":36.0},{"x":18,"y":33.0},{"x":19,"y":55.0},{"x":20,"y":39.0},{"x":21,"y":30.0},{"x":22,"y":10.0},{"x":23,"y":7.0},{"x":24,"y":36.0},{"x":25,"y":34.0},{"x":26,"y":32.0},{"x":27,"y":26.0},{"x":28,"y":36.0},{"x":29,"y":27.0},{"x":30,"y":42.0},{"x":31,"y":56.0},{"x":32,"y":10.0}],"displayedValue":41,"id":"pivotal","updatedAt":1449550658}
 
-'
-memory11: ! 'data: {"value":7.65,"moreinfo":"locarno-load1","id":"memory11","updatedAt":1449257337}
+businesscat: |+
+  data: {"image":"http://cdn.meme.am/instances/400x/65834436.jpg","id":"businesscat","updatedAt":1449550653}
 
+nextmuni: |+
+  data: {"items":[{"label":"47","value":"26m and 46m"},{"label":"Fail Train","value":"1m and 9m"}],"id":"nextmuni","updatedAt":1449550350}
 
-'
-memory12: ! 'data: {"value":33.2,"moreinfo":"locarno-web1","id":"memory12","updatedAt":1449257337}
-
-
-'
-memory13: ! 'data: {"value":28.9,"moreinfo":"locarno-web2","id":"memory13","updatedAt":1449257337}
-
-
-'
-memory14: ! 'data: {"value":79.5,"moreinfo":"production-app1","id":"memory14","updatedAt":1449257337}
-
-
-'
-memory15: ! 'data: {"value":98.0,"moreinfo":"production-app2","id":"memory15","updatedAt":1449257337}
-
-
-'
-memory16: ! 'data: {"value":88.9,"moreinfo":"production-app3","id":"memory16","updatedAt":1449257337}
-
-
-'
-memory17: ! 'data: {"value":99.0,"moreinfo":"production-app4","id":"memory17","updatedAt":1449257337}
-
-
-'
-memory18: ! 'data: {"value":41.1,"moreinfo":"production-es2","id":"memory18","updatedAt":1449257337}
-
-
-'
-memory19: ! 'data: {"value":2.57,"moreinfo":"production-load2","id":"memory19","updatedAt":1449257337}
-
-
-'
-pageload: ! 'data: {"current":7.55,"last":7.66,"id":"pageload","updatedAt":1449275863}
-
-
-'
-pullrequests: ! 'data: {"items":[{"label":"wildcard param prefix bug","value":"mcspring"},{"label":"Fix
-  for https://github.com/julienschmidt/httprouter/issues/106","value":"newhook"},{"label":"Test
-  for path existence and iterator over all paths","value":"fcavani"},{"label":"remove
-  unused static nodeType","value":"MrGossett"},{"label":"Introduction of RouteGroup
-  concept","value":"dbudworth"},{"label":"added: support for RawPathRouting in Router","value":"imkira"}],"id":"pullrequests","updatedAt":1449275323}
-
-
-'
-apdex: ! 'data: {"current":0.53,"last":4.0,"goal":4,"title1":"Goal","title2":"Current","id":"apdex","updatedAt":1449275863}
-
-
-'
-page_views: ! 'data: {"current":64531,"last":72240,"id":"page_views","updatedAt":1449275803}
-
-
-'
-businesscat: ! 'data: {"image":"http://cdn.meme.am/instances/400x/65834436.jpg","id":"businesscat","updatedAt":1449275623}
-
-
-'

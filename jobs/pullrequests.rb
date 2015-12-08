@@ -1,29 +1,23 @@
 require 'net/http'
 require 'json'
 require 'rest_client'
-
-url = 'https://api.github.com/repos/julienschmidt/httprouter/pulls'
+require 'github_api'
+url = ENV['GITHUB_PULLS_URL']
+access_token = ENV['GITHUB_API_TOKEN']
 
 pull_requests = Hash.new({ value: 0 })
+max_shown = 16
 
-SCHEDULER.every '10m' do
-	response = RestClient.get(url)
+SCHEDULER.every '1m' do
+	response = RestClient.get(url+"?access_token="+access_token)
 	pr_data = JSON.parse(response)
-	puts pr_data[0]["title"]
-	pr_data.map.with_index do |pr, index|
+	#puts pr_data[0]["title"]
+	for index in (1..max_shown) do
 		pull_requests[pr_data[index]["title"]] = { label: pr_data[index]["title"], value: pr_data[index]["user"]["login"]}
 		#puts pr_data[index]["user"]["login"]
 	end
+	if(pr_data.length > max_shown)
+		pull_requests["Number not shown"] = { label: (pr_data.length - max_shown).to_s + " more not shown", value: ""}
+	end
 	send_event('pullrequests', { items: pull_requests.values })
-	# result = RestClient.post('https://github.com/login/oauth/access_token',
- #                          {:client_id => ENV['CLIENT_ID'],
- #                           :client_secret => ENV['CLIENT_SECRET'],
- #                           :code => ENV['SESSION_CODE']},
- #                           :accept => :json)
-
-	# extract the token and granted scopes
-	#access_token = JSON.parse(result)['access_token']
-	#auth_result = JSON.parse(RestClient.get('https://api.github.com/user',
-                                        #{:params => {:access_token => access_token}}))
-	#puts auth_result
 end

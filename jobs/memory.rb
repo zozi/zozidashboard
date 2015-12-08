@@ -6,7 +6,7 @@ require 'rest_client'
 
 url = 'https://api.newrelic.com/v2/servers.json?filter[ids]=1557588,+2709321,+2514170,+2297767,+2709479'
 
-SCHEDULER.every '10s' do
+SCHEDULER.every '30s' do
 	response = RestClient.get(
 		url,
 		:'X-Api-Key' => ENV['NEWRELIC_API_KEY']

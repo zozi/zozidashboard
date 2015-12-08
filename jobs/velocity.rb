@@ -6,7 +6,7 @@ projects = [1170950]
 
 client = TrackerApi::Client.new(token: ENV['PIVOTAL_API_TOKEN'])
 
-SCHEDULER.every '10s', :first_in => 0 do
+SCHEDULER.every '1m', :first_in => 0 do
   projects.each do |project_id|
     project = client.project(project_id, fields: ':default,current_volatility,current_velocity')
 

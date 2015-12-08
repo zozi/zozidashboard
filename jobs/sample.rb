@@ -17,7 +17,7 @@ current_stuck = 10000
 current_provisionable = 8000
 current_laps = 6000
 
-SCHEDULER.every '10s' do
+SCHEDULER.every '1m' do
 	send_event('mychart', slices: [
         ['Imported to ZOZI', 'Hours per Day'],
         ['Imported to ZOZI', current_imported + rand(0..20)],

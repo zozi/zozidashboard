@@ -30,3 +30,11 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
     font-size: 65px;
   }
 }
+.nextmuni {
+  .label, .value {
+    font-size: 26px;
+  }
+  li{
+    display: block;
+  }
+}
