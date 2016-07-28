@@ -10,7 +10,7 @@ $(function() {
 $(function() {
 Dashing.widget_base_dimensions = [370, 340]
 Dashing.numColumns = 5
-Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":2,"size_y":1},{"col":5,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1}]')
+Dashing.gridsterLayout('[{"col":3,"row":1,"size_x":2,"size_y":1},{"col":1,"row":1,"size_x":2,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1}]')
 });
 </script>
 
@@ -19,7 +19,7 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
 
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="memory4" data-view="Meter" data-title="Memory Usage App1" data-min="0" data-max="100" style="background-color:#1695A3;"></div>
     </li>
     </li>
@@ -30,12 +30,15 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
       <div data-id="memory2" data-view="Meter" data-title="Memory Usage App3" data-min="0" data-max="100" style="background-color:#88A825;"></div>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="memory5" data-view="Meter" data-title="Memory Usage App4" data-min="0" data-max="100" style="background-color:#B64926;"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    </li> -->
+<!--     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="memory1" data-view="Meter" data-title="Memory Usage DBM" data-min="0" data-max="100"></div>
+    </li> -->
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="rpm_errors" data-view="Rickshawgraph" data-title="Errors" data-renderer="line" data-colors="white"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="rpm_throughput" data-view="Graph" data-title="Request / min"></div>
+      <div data-id="rpm_throughput" data-view="Rickshawgraph" data-title="Request / min" data-renderer="line" data-colors="white"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="pageload" data-view="Number" data-title="Page Load Time"></div>
@@ -44,9 +47,6 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div class="purple" data-id="page_views" data-view="Number" data-title="Page Views Today"></div>
       <i class="icon-clock icon-background"></i>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div style="background-color: #C11433" data-id="nextmuni" data-view="List" data-title="Next Muni"></div>
     </li>
   </ul>
 </div>

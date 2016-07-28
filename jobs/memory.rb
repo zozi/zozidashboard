@@ -16,13 +16,14 @@ SCHEDULER.every '10s' do
 	meters = []
 	servers.each_with_index do |server, index|
 		if server["summary"] != nil
-			meter_data = {		
+			meter_data = {
 				name: server["name"],
 				value: server["summary"]["memory"]
 			}
 			meters << meter_data
 		end
 	end
+
 	meters.each_with_index do |meter, index|
 		send_event("memory"+(index+1).to_s,   { value: meters[index][:value], moreinfo: meters[index][:name] })
 	end

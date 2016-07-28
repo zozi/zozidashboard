@@ -23,8 +23,8 @@ url = "https://api.newrelic.com/v2/applications/#{zozi_pro_app_id}/metrics/data.
 SCHEDULER.every '5s', :first_in => 0 do |job|
   response = RestClient.get(url,
     params: {
-      names: ['HttpDispatcher'],
-      values: ['requests_per_minute'],
+      names: ['HttpDispatcher', 'Errors/all'],
+      values: ['requests_per_minute', 'error_count'],
       from: "#{3.hours.ago}",
       to: "#{Time.now}"
     },
@@ -32,13 +32,20 @@ SCHEDULER.every '5s', :first_in => 0 do |job|
 
   parsed_response = JSON.parse(response)
 
-  metric_data = parsed_response['metric_data']['metrics'].find { |metric| metric['name'] == 'HttpDispatcher'}
-  points = metric_data['timeslices'].map.with_index do |value, index|
+  rpm_graph_points = generate_points(parsed_response, 'HttpDispatcher', 'requests_per_minute')
+  error_graph_points = generate_points(parsed_response, 'Errors/all', 'error_count')
+
+  send_event(:rpm_throughput, points: rpm_graph_points)
+  send_event(:rpm_errors, points: error_graph_points)
+end
+
+
+def generate_points(data_source, metric_name, value_name)
+  metric_data = data_source['metric_data']['metrics'].find { |metric| metric['name'] == metric_name }
+  metric_data['timeslices'].map.with_index do |value, index|
     {
       x: DateTime.parse(value['from']).in_time_zone('Pacific Time (US & Canada)').to_i,
-      y: value["values"]["requests_per_minute"]
+      y: value["values"][value_name]
     }
   end
-
-  send_event(:rpm_throughput, points: points)
 end
