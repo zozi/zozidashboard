@@ -88,6 +88,7 @@ GEM
     jwt (1.5.2)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
@@ -99,7 +100,7 @@ GEM
       thor
       xml-simple
     naught (1.1.0)
-    netrc (0.7.9)
+    netrc (0.11.0)
     nokogiri (1.6.7)
       mini_portile2 (~> 2.0.0.rc2)
     oauth2 (1.0.0)
@@ -123,8 +124,10 @@ GEM
     representable (2.4.0)
       declarative (~> 0.0.5)
       uber (~> 0.0.15)
-    rest_client (1.8.3)
-      netrc (~> 0.7.7)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.19)
@@ -194,7 +197,7 @@ DEPENDENCIES
   dotenv-rails
   github_api
   muni
-  rest_client
+  rest-client
   tracker_api
   twitter (>= 5.9.0)
 

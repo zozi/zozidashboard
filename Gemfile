@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'dotenv-rails'
 gem 'dashing'
-gem 'rest_client'
+gem 'rest-client'
 gem 'tracker_api'
 gem 'muni'
 gem 'github_api'
