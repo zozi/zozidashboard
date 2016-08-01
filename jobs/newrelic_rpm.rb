@@ -20,7 +20,7 @@ zozi_pro_app_id = 161122
 url = "https://api.newrelic.com/v2/applications/#{zozi_pro_app_id}/metrics/data.json"
 
 
-SCHEDULER.every '5s', :first_in => 0 do |job|
+SCHEDULER.every '10s', :first_in => 0 do |job|
   response = RestClient.get(url,
     params: {
       names: ['HttpDispatcher', 'Errors/all'],
