@@ -11,7 +11,7 @@ class CloudWatch
     @client.get_metric_statistics(parsed_options)
   end
 
-  def build_metric_options(namespace: 'AWS/EC2', metric_name:, dimensions: [], instance_id:, start_time: 1.hour.ago, end_time: Time.now, period: 300)
+  def build_metric_options(namespace: 'AWS/EC2', metric_name:, dimensions: [], instance_id:, start_time: 3.hours.ago, end_time: Time.now, period: 300)
     {
       namespace: namespace,
       metric_name: metric_name,

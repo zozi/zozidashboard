@@ -1,9 +1,9 @@
 require 'rest_client'
 require 'active_support/all'
 require 'byebug'
+require './lib/application'
 
-# Monitored applications
-app_name = "ZOZI (Production)"
+applications = Application.init
 
 # Emitted metrics:
 # - rpm_apdex
@@ -15,13 +15,16 @@ app_name = "ZOZI (Production)"
 # - rpm_cpu
 # - rpm_memory
 
-zozi_pro_app_id = 161122
-
-url = "https://api.newrelic.com/v2/applications/#{zozi_pro_app_id}/metrics/data.json"
-
-
 SCHEDULER.every '10s', :first_in => 0 do |job|
-  response = RestClient.get(url,
+
+  applications.each do |application|
+    fetch_new_relic_stats(application.new_relic[:app_id], application.name)
+  end
+
+end
+
+def fetch_new_relic_stats(app_id, app_name)
+  response = RestClient.get("https://api.newrelic.com/v2/applications/#{app_id}/metrics/data.json",
     params: {
       names: ['HttpDispatcher', 'Errors/all'],
       values: ['requests_per_minute', 'error_count'],
@@ -35,8 +38,8 @@ SCHEDULER.every '10s', :first_in => 0 do |job|
   rpm_graph_points = generate_points(parsed_response, 'HttpDispatcher', 'requests_per_minute')
   error_graph_points = generate_points(parsed_response, 'Errors/all', 'error_count')
 
-  send_event(:rpm_throughput, points: rpm_graph_points)
-  send_event(:rpm_errors, points: error_graph_points)
+  send_event("#{app_name}_rpm_throughput", points: rpm_graph_points)
+  send_event("#{app_name}_rpm_errors", points: error_graph_points)
 end
 
 
