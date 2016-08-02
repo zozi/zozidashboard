@@ -10,7 +10,7 @@ $(function() {
 $(function() {
 Dashing.widget_base_dimensions = [370, 340]
 Dashing.numColumns = 5
-Dashing.gridsterLayout('[{"col":3,"row":2,"size_x":2,"size_y":1},{"col":1,"row":2,"size_x":2,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":2,"size_y":1},{"col":3,"row":1,"size_x":2,"size_y":1}]')
+Dashing.gridsterLayout('[{"col":3,"row":2,"size_x":2,"size_y":1},{"col":1,"row":2,"size_x":2,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":2,"size_y":1},{"col":3,"row":1,"size_x":2,"size_y":1},{"col":5,"row":2,"size_x":1,"size_y":1}]')
 });
 </script>
 
@@ -50,13 +50,9 @@ Dashing.gridsterLayout('[{"col":3,"row":2,"size_x":2,"size_y":1},{"col":1,"row":
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="rpm_throughput" data-view="Rickshawgraph" data-title="Request / min" data-renderer="line" data-colors="white"></div>
     </li>
-<!--     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="pageload" data-view="Number" data-title="Page Load Time"></div>
-      <i class="icon-clock icon-background"></i>
-    </li>
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div class="purple" data-id="page_views" data-view="Number" data-title="Page Views Today"></div>
-      <i class="icon-clock icon-background"></i>
-    </li> -->
+      <div data-id="server_status" data-view="ServerStatus" data-title="ServerStatus"></div>
+    </li>
   </ul>
 </div>
