@@ -1,10 +1,11 @@
 class Application
-  attr_reader :name, :instances, :new_relic
+  attr_reader :name, :instances, :new_relic, :ha_proxy
 
-  def initialize(name:, instances: {}, new_relic: {})
+  def initialize(name:, instances: {}, new_relic: {}, ha_proxy: {})
     @name = name
     @instances = instances
     @new_relic = new_relic
+    @ha_proxy = ha_proxy
   end
 
   # Strange API, but its an easier way to share configs across jobs.
@@ -25,6 +26,10 @@ class Application
         new_relic: {
           app_name: "ZOZI (Production)",
           app_id: 161122
+        },
+        ha_proxy: {
+          domain: 'zozi.com',
+          status_match: /stinson-app[0-4]/
         }
       ),
       # Data Object for a.zozi.com environment
@@ -41,6 +46,10 @@ class Application
         new_relic: {
           app_name: "Advance 2.0 (Denali)",
           app_id: 4073662
+        },
+        ha_proxy: {
+          domain: 'a.zozi.com',
+          status_match: /denali-web[0-4]/
         }
       )
     ]

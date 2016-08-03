@@ -32,11 +32,15 @@ Dashing.gridsterLayout('[{"col":3,"row":2,"size_x":2,"size_y":1},{"col":1,"row":
     </li>
 
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="advance_rpm_errors" data-view="Rickshawgraph" data-title="Errors" data-renderer="line" data-colors="white" data-max="10"></div>
+      <div data-id="advance_rpm_errors" data-view="Rickshawgraph" data-title="Count" data-renderer="line" data-colors="white" data-max="50"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="advance_rpm_throughput" data-view="Rickshawgraph" data-title="Request / min" data-renderer="line" data-colors="white"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="advance_server_status" data-view="ServerStatus" data-title="Server Health Check"></div>
     </li>
   </ul>
 </div>
