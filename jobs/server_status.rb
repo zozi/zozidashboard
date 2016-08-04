@@ -18,7 +18,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
     csv = CSV.parse(response.body[2..-1], headers: true)
 
     csv.each do |row|
-      if row['pxname'] == 'application-backend' && row['svname'].match(application.ha_proxy[:status_match])
+      if (row['pxname'] == 'application-backend' || row['pxname'] == 'cms-backend') && row['svname'].match(application.ha_proxy[:status_match])
         if row['status'] == 'UP'
           arrow = 'icon-ok-sign'
           color = 'green'

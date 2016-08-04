@@ -29,7 +29,7 @@ class Application
         },
         ha_proxy: {
           domain: 'zozi.com',
-          status_match: /stinson-app[0-4]/
+          status_match: /stinson-(app|cms)[0-4]/
         }
       ),
       # Data Object for a.zozi.com environment
